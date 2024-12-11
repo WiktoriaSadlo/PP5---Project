@@ -8,12 +8,17 @@
 </head>
 <body>
     <h1>Witamy w aplikacji do nauki języków</h1>
-    <nav>
-        <a href="pages/login.html">Logowanie</a>
-        <a href="pages/register.html">Rejestracja</a>
-        <a href="pages/language-selection.html">Wybór języka</a>
-        <a href="pages/exercises.html">Ćwiczenia</a>
-    </nav>
+    <div id="app">
+        <!-- Nawigacja -->
+        <nav>
+            <button onclick="navigate('register')">Rejestracja</button>
+            <button onclick="navigate('language-selection')">Wybór języka</button>
+            <button onclick="navigate('exercises')">Ćwiczenia</button>
+        </nav>
+
+        <!-- Zawartość dynamiczna -->
+        <div id="content"></div>
+    </div>
     <script src="static/script.js"></script>
 </body>
 </html>
